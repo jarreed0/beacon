@@ -96,7 +96,6 @@ func startServer() error {
 		// Decrypt the data
 		decryptedData, err := decrypt(data)
 		if err != nil {
-                        fmt.Printf("Relaying msg...\n")
 			// Forward to other targets
 			forwardData(data, addr)
 			continue
@@ -164,6 +163,7 @@ func forwardData(data []byte, senderAddr *net.UDPAddr) {
 
 			// Compare the IP addresses
 			if senderIP != udpAddr.IP.String() {
+                                fmt.Printf("Relaying msg to %s\n", udpAddr.IP.String())
 				conn, err := net.DialUDP("udp", nil, udpAddr)
 				if err != nil {
 					fmt.Println("Forwarding error:", err)
