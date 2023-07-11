@@ -181,7 +181,13 @@ func forwardData(data []byte, senderAddr *net.UDPAddr) {
 
 func logMessage(msg Message) {
 	// TODO: Implement your logging logic here
+
+        diff := time.Now().Unix() - msg.Timestamp
+        duration := time.Duration(diff) * time.Second
+
         fmt.Printf(time.Now().String())
 	fmt.Printf("\nLogged message: %+v\n", msg)
+
+	fmt.Println("Time difference:", duration)
 }
 
