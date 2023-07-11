@@ -1,0 +1,8 @@
+generate private/public key
+encrypt msg with public key
+decrypt msg with private key
+list nodes to talk to
+send encrypted msg to all nodes
+listen to all msgs
+decrypt msg if possible
+send msg if not possible
