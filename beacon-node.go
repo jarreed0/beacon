@@ -91,6 +91,8 @@ func startServer() error {
 
 		data := buf[:n]
 
+                fmt.Printf("Received message from %s\n", addr.IP)
+
 		// Decrypt the data
 		decryptedData, err := decrypt(data)
 		if err != nil {
