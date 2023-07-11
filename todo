@@ -26,3 +26,5 @@ x node say who msg was received from
 x node say who youre sending msg to
 
 x node say time dif between when msg received and sent
+
+add ddos'ers to config under throttle and then blocked list
