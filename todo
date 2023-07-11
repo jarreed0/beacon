@@ -1,11 +1,11 @@
-generate private/public key
-encrypt msg with public key
-decrypt msg with private key
-list nodes to talk to
-send encrypted msg to all nodes
-listen to all msgs
-decrypt msg if possible
-send msg if not possible
+x generate private/public key
+x encrypt msg with public key
+x decrypt msg with private key
+x list nodes to talk to
+x send encrypted msg to all nodes
+x listen to all msgs
+x decrypt msg if possible
+x send msg if not possible
 
 cannot send to self
 
@@ -20,5 +20,9 @@ msg log file
 conf to send msg to email when received
 systemd for node
 
+cap msg, send name, json size in cli and node
 
+x node say who msg was received from
+x node say who youre sending msg to
 
+x node say time dif between when msg received and sent
